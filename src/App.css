@@ -18,22 +18,41 @@ header {
   border: 1px solid black;
   width: fit-content;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav {
   border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  border: 1px solid black;
+  padding: 0.25rem;
 }
 
 #about {
   border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 #tech {
   border: 1px solid black;
 }
 
+ul {
+  list-style: none;
+}
+
 footer {
   border: 1px solid black;
+  padding: 1rem;
 }
 @keyframes fadeIn {
   0% {
