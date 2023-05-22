@@ -8,16 +8,33 @@ body {
   font-family: "Source Code Pro", monospace;
   flex-grow: 1;
   border: 1px solid black;
+  font-size: 20px;
   margin: 2rem;
+  padding: 0.5rem;
 }
 
 header {
-  animation: fadeIn 5s;
+  animation: fadeIn 1s;
   border: 1px solid black;
   width: fit-content;
   padding: 1rem;
 }
 
+nav {
+  border: 1px solid black;
+}
+
+#about {
+  border: 1px solid black;
+}
+
+#tech {
+  border: 1px solid black;
+}
+
+footer {
+  border: 1px solid black;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
