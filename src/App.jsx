@@ -7,8 +7,10 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <div>
-      <Header />
-      <Nav />
+      <section id="heading">
+        <Header />
+        <Nav />
+      </section>
       <About />
       <Footer />
     </div>

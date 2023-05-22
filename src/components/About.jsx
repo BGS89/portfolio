@@ -21,31 +21,31 @@ function About() {
         praesentium ea maxime, tenetur esse saepe repellendus. Eos debitis cum
         vitae distinctio?
       </p>
-      <h3>Tech</h3>
+      <h3>Technicsl Skills</h3>
       <ul id="tech">
         <li>
-          React JS <i class="fa-brands fa-react fa-spin"></i>
+          <i class="fa-brands fa-react"></i> React
         </li>
         <li>
-          JavaScript <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-js"></i> JavaScript
         </li>
         <li>
-          HTML <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-html5"></i> HTML
         </li>
         <li>
-          CSS <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-css3-alt"></i> CSS
         </li>
         <li>
-          PostreSQL <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-react"></i> PostreSQL
         </li>
         <li>
-          Node.js <i class="fa-brands fa-node"></i>
+          <i class="fa-brands fa-node"></i> Node.js
         </li>
         <li>
-          Git <i class="fa-brands fa-git-alt"></i>
+          <i class="fa-brands fa-git-alt"></i> Git
         </li>
         <li>
-          GitHub <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-github"></i> GitHub
         </li>
       </ul>
     </section>

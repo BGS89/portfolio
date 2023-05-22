@@ -13,6 +13,11 @@ body {
   padding: 0.5rem;
 }
 
+#heading {
+  display: flex;
+  justify-content: space-between;
+}
+
 header {
   animation: fadeIn 1s;
   border: 1px solid black;
@@ -24,11 +29,16 @@ header {
 nav {
   border: 1px solid black;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minMax(100px, 1fr));
+  gap: 0.5rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.25rem;
 }
 
 nav ul li {
@@ -42,22 +52,38 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
-ul {
-  list-style: none;
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
 
 #tech {
   border: 1px solid black;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
+}
+
+@media (min-width: 100px) {
+  #tech {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 700px) {
+  #tech {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 #tech li {
-  border: 1px solid black;
   margin: 0 auto;
   width: fit-content;
   padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
