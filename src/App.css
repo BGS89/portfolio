@@ -42,12 +42,22 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
-#tech {
-  border: 1px solid black;
-}
-
 ul {
   list-style: none;
+}
+
+#tech {
+  border: 1px solid black;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
+}
+
+#tech li {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0.25rem;
 }
 
 footer {
