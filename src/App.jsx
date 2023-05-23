@@ -1,27 +1,21 @@
 import "./App.css";
-import About from "./components/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import { Routes, Route } from "react-router-dom";
-import Projects from "./components/Projects";
-import Info from "./components/Info";
-import Contact from "./components/Contact";
+import { BrowserRouter as Router } from "react-router-dom";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
     <div>
-      <section id="heading">
-        <Header />
-        <Nav />
-      </section>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/info" element={<Info />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <Router>
+        <section id="heading">
+          <Header />
+          <Nav />
+        </section>
+        <AnimatedRoutes />
+        <Footer />
+      </Router>
     </div>
   );
 }
