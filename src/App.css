@@ -7,6 +7,15 @@ body {
   /* height: 100vh; */
 }
 
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
 #heading {
   display: flex;
   justify-content: space-between;
