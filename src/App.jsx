@@ -14,7 +14,7 @@ function App() {
           <Nav />
         </section>
         <AnimatedRoutes />
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );
