@@ -13,7 +13,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/info" element={<Info />} />
+        {/* <Route path="/info" element={<Info />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>

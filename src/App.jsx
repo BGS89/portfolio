@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [theme, setTheme] = useState("light");
+
   const toggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
@@ -15,14 +16,20 @@ function App() {
       setTheme("light");
     }
   };
+
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
+
   return (
     <div className={`App ${theme}`}>
       <Router>
         <section id="heading">
           <Header />
+          <label className="switch">
+            <input type="checkbox" />
+            <span className="slider round"></span>
+          </label>
           <button onClick={toggleTheme}>Toggle Theme</button>
           <Nav />
         </section>
