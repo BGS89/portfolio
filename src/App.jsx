@@ -26,11 +26,12 @@ function App() {
       <Router>
         <section id="heading">
           <Header />
+          <i class="fa-solid fa-sun"></i>
           <label className="switch">
-            <input type="checkbox" />
+            <input type="checkbox" onClick={toggleTheme} />
             <span className="slider round"></span>
           </label>
-          <button onClick={toggleTheme}>Toggle Theme</button>
+          <i class="fa-regular fa-moon"></i>
           <Nav />
         </section>
         <AnimatedRoutes />
