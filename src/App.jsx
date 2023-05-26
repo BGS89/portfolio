@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import { useState, useEffect } from "react";
+import Intro from "./components/Intro";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
+      <Intro />
       <Router>
         <section id="heading">
           <Header />
