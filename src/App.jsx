@@ -9,6 +9,7 @@ import Intro from "./components/Intro";
 
 function App() {
   const [theme, setTheme] = useState("light");
+  const [showApp, setShowApp] = useState(false);
 
   const toggleTheme = () => {
     if (theme === "light") {
@@ -22,25 +23,41 @@ function App() {
     document.body.className = theme;
   }, [theme]);
 
-  return (
-    <div className={`App ${theme}`}>
-      <Intro />
-      <Router>
-        <section id="heading">
-          <Header />
-          <i class="fa-solid fa-sun"></i>
-          <label className="switch">
-            <input type="checkbox" onClick={toggleTheme} />
-            <span className="slider round"></span>
-          </label>
-          <i class="fa-regular fa-moon"></i>
-          <Nav />
-        </section>
-        <AnimatedRoutes />
-        {/* <Footer /> */}
-      </Router>
-    </div>
-  );
+  useEffect(() => {
+    setTimeout(() => {
+      setShowApp(true);
+    }, 10001);
+  }, []);
+
+  {
+    if (showApp === true) {
+      return (
+        <div>
+          <div className={`App ${theme}`}>
+           
+            <Router>
+              <section id="heading">
+                <Header />
+                <i class="fa-solid fa-sun"></i>
+                <label className="switch">
+                  <input type="checkbox" onClick={toggleTheme} />
+                  <span className="slider round"></span>
+                </label>
+                <i class="fa-regular fa-moon"></i>
+                <Nav />
+              </section>
+              <AnimatedRoutes />
+              {/* <Footer /> */}
+            </Router>
+          </div>
+        </div>
+      );
+    }
+  }
+
+  return <div>
+     <Intro />
+  </div>;
 }
 
 export default App;
