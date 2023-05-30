@@ -2,7 +2,7 @@ body {
   font-family: "Source Code Pro", monospace;
   border: 1px solid black;
   font-size: 20px;
-  /* margin: 2rem; */
+  margin: 3rem;
   padding: 0.5rem;
   /* height: 100vh; */
 }
@@ -25,20 +25,11 @@ body {
 
 header {
   animation: fadeIn 0.75s;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: fit-content;
   padding: 1rem;
   margin-bottom: 1rem;
   /* transition: 0.75s; */
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .switch {
@@ -117,7 +108,7 @@ nav ul {
 }
 
 nav ul li {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0.25rem;
 }
 
@@ -142,7 +133,7 @@ main {
 }
 
 #about {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -156,7 +147,7 @@ h3 {
 }
 
 #skills {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #tech {
@@ -188,7 +179,7 @@ h3 {
 }
 
 #projects {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0.5em;
   display: grid;
   /* justify-content: center; */
@@ -197,7 +188,7 @@ h3 {
 }
 
 .card {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0.25rem;
   width: 310px;
   display: grid;
@@ -246,7 +237,16 @@ footer {
 }
 
 #tsparticles {
-  /* width: 500px; */
+  animation: fadeIn 1s;
   height: 750px;
   box-shadow: inset 0px 0px 10px 10px #000;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

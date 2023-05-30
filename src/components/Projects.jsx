@@ -12,8 +12,6 @@ function Projects() {
       <section id="projects">
         <Card />
         <Card />
-        <Card />
-        <Card />
       </section>
     </motion.div>
   );
