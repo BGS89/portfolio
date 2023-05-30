@@ -46,10 +46,10 @@ function App() {
                 <i class="fa-regular fa-moon"></i>
                 <Nav />
               </section>
-              <section>
+              <main>
                 <Deer />
                 <AnimatedRoutes />
-              </section>
+              </main>
               {/* <Footer /> */}
             </Router>
           </div>
