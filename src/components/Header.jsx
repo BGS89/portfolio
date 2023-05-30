@@ -2,7 +2,7 @@ function Header() {
   return (
     <header>
       <h1>Ben Sivyer</h1>
-      <p>Web||Software Developer</p>
+      <h2>Web||Software Developer</h2>
     </header>
   );
 }
