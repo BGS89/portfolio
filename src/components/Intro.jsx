@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 
 function Intro() {
   const line1 = "Ben Sivyer";
-  const line2 = "Web||Software Developer";
+  const line2 = "Web || Software Developer";
 
   const sentance = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.5,
-        staggerChildren: 0.08,
+        delay: 0.1,
+        staggerChildren: 0.04,
       },
     },
   };

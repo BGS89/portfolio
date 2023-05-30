@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import { useState, useEffect } from "react";
 import Intro from "./components/Intro";
+import Deer from "./components/StarlingMurmuration";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -34,7 +35,6 @@ function App() {
       return (
         <div>
           <div className={`App ${theme}`}>
-           
             <Router>
               <section id="heading">
                 <Header />
@@ -46,7 +46,10 @@ function App() {
                 <i class="fa-regular fa-moon"></i>
                 <Nav />
               </section>
-              <AnimatedRoutes />
+              <section>
+                <Deer />
+                <AnimatedRoutes />
+              </section>
               {/* <Footer /> */}
             </Router>
           </div>
@@ -55,9 +58,11 @@ function App() {
     }
   }
 
-  return <div>
-     <Intro />
-  </div>;
+  return (
+    <div>
+      <Intro />
+    </div>
+  );
 }
 
 export default App;

@@ -10,9 +10,9 @@ function Nav() {
         <Link to="/projects">
           <li>Projects</li>
         </Link>
-        {/* <Link to="/info">
+        <Link to="/info">
           <li>Info</li>
-        </Link> */}
+        </Link>
         <Link to="/contact">
           <li>Contact</li>
         </Link>

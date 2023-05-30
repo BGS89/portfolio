@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Deer from "./StarlingMurmuration";
 
 function Info() {
   return (
@@ -8,6 +9,7 @@ function Info() {
       exit={{ opacity: 0, transition: { duration: 0.5 } }}
     >
       <h1>INFO</h1>
+      <Deer />
     </motion.div>
   );
 }
