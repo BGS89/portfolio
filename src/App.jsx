@@ -1,5 +1,4 @@
 import "./App.css";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -47,7 +46,7 @@ function App() {
                 <Nav />
               </section>
               <main>
-                <Deer />
+                <Deer theme={theme} />
                 <AnimatedRoutes />
               </main>
               {/* <Footer /> */}

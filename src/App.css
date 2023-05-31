@@ -239,7 +239,6 @@ footer {
 #tsparticles {
   animation: fadeIn 1s;
   height: 750px;
-  box-shadow: inset 0px 0px 10px 10px #000;
 }
 
 @keyframes fadeIn {

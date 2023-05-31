@@ -16,15 +16,6 @@ function About() {
           committed to expanding my technical skillset and contributing to
           innovative projects that make a positive impact.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid,
-          beatae ad consectetur nesciunt iusto explicabo autem, molestiae
-          dolorum voluptatibus illo expedita impedit reprehenderit mollitia
-          voluptate. Culpa accusamus dolor vel? Tempore sunt perspiciatis aut
-          maxime nobis eius quasi illo ea soluta, vero minus eum repudiandae
-          alias distinctio error corporis magni pariatur sed nisi doloribus
-          laudantium at laborum enim illum. Voluptate.
-        </p>
       </section>
       <section id="skills">
         <h3>Technical Skills</h3>

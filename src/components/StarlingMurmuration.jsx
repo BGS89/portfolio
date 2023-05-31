@@ -1,13 +1,24 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { useState, useEffect } from "react";
 
-function Deer() {
+function Deer({ theme }) {
+  const [particleColour, setParticleColour] = useState("#000000");
+  const [backgroundColour, setBackgroundColour] = useState("#ffffff");
+
+  useEffect(() => {
+    if (theme === "light") {
+      setParticleColour("#000000");
+      setBackgroundColour("#ffffff");
+    } else {
+      setParticleColour("#ffffff");
+      setBackgroundColour("#000000");
+    }
+  }, [theme]);
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
@@ -23,7 +34,7 @@ function Deer() {
       options={{
         background: {
           color: {
-            value: "#ffffff",
+            value: backgroundColour,
           },
         },
         fullScreen: {
@@ -54,10 +65,10 @@ function Deer() {
         },
         particles: {
           color: {
-            value: "#000000",
+            value: particleColour,
           },
           links: {
-            color: "#000000",
+            color: particleColour,
             distance: 150,
             enable: true,
             opacity: 0.5,
