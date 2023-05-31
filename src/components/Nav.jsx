@@ -4,13 +4,13 @@ function Nav() {
   return (
     <nav>
       <ul>
-        <Link to="/">
+        <Link style={{ textDecoration: "none" }} to="/">
           <li>Home</li>
         </Link>
-        <Link to="/projects">
+        <Link style={{ textDecoration: "none" }} to="/projects">
           <li>Projects</li>
         </Link>
-        <Link to="/contact">
+        <Link style={{ textDecoration: "none" }} to="/contact">
           <li>Contact</li>
         </Link>
       </ul>
