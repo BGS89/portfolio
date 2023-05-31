@@ -5,15 +5,12 @@ import { useState, useEffect } from "react";
 
 function Deer({ theme }) {
   const [particleColour, setParticleColour] = useState("#000000");
-  const [backgroundColour, setBackgroundColour] = useState("#ffffff");
 
   useEffect(() => {
     if (theme === "light") {
       setParticleColour("#000000");
-      setBackgroundColour("#ffffff");
     } else {
       setParticleColour("#ffffff");
-      setBackgroundColour("#000000");
     }
   }, [theme]);
 
@@ -34,7 +31,7 @@ function Deer({ theme }) {
       options={{
         background: {
           color: {
-            value: backgroundColour,
+            value: "#00",
           },
         },
         fullScreen: {
