@@ -8,13 +8,13 @@ body {
 }
 
 .dark {
-  background-color: #333;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   transition: 0.75s;
 }
 .light {
-  background-color: #fff;
-  color: #333;
+  background-color: #ffffff;
+  color: #000000;
   transition: 0.75s;
 }
 
@@ -70,7 +70,7 @@ header {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: grey;
 }
 
 input:focus + .slider {
