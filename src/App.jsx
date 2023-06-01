@@ -35,15 +35,16 @@ function App() {
         <div>
           <div className={`App ${theme}`}>
             <Router>
-              <section id="heading">
-                <Header />
+              <div id="switchContainer">
                 <i class="fa-solid fa-sun"></i>
                 <label className="switch">
                   <input type="checkbox" onClick={toggleTheme} />
                   <span className="slider round"></span>
                 </label>
                 <i class="fa-regular fa-moon"></i>
-                <Nav />
+              </div>
+              <section id="heading">
+                <Header />
               </section>
               <main>
                 <Deer theme={theme} />

@@ -8,8 +8,8 @@ function Projects() {
       animate={{ opacity: 1, transition: { delay: 0.5, duration: 1 } }}
       exit={{ opacity: 0, transition: { duration: 0.5 } }}
     >
-      <h2>PROJECTS</h2>
       <section id="projects">
+        <h2>Projects</h2>
         <Card />
         <Card />
       </section>

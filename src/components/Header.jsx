@@ -1,8 +1,10 @@
+import Nav from "./Nav";
+
 function Header() {
   return (
     <header>
-      <h1>Ben Sivyer</h1>
-      <h2>Web||Software Developer</h2>
+      <h1>Ben Sivyer || Web & Software Developer</h1>
+      <Nav />
     </header>
   );
 }
