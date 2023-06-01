@@ -157,10 +157,10 @@ main {
   }
 }
 
-#imaging {
+/* #imaging {
   border: 1px solid black;
   grid-row-start: span 2;
-}
+} */
 
 #about {
   /* border: 1px solid black; */
@@ -273,6 +273,13 @@ footer {
   animation: fadeIn 1s;
   height: 750px;
   width: auto;
+  position: absolute;
+}
+
+@media (min-width: 950px) {
+  #tsparticles {
+    position: relative;
+  }
 }
 
 @keyframes fadeIn {
