@@ -1,6 +1,5 @@
 body {
   font-family: "Source Code Pro", monospace;
-  /* border: 1px solid black; */
   font-size: 20px;
   margin: 3rem;
   padding: 0.5rem;
@@ -220,25 +219,21 @@ h3 {
 }
 
 .card {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   padding: 0.25rem;
   width: 310px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 416px) {
   .card {
     grid-template-columns: 1fr 1fr;
     width: fit-content;
   }
 }
 
-/* .card p {
-  grid-column-start: span 2;
-} */
-
-@media (min-width: 376px) {
+@media (min-width: 416px) {
   .card p {
     grid-column-start: span 2;
   }
@@ -251,10 +246,10 @@ h3 {
 }
 
 .contact {
-  /* border: 1px solid black; */
   padding: 0.5rem;
   display: flex;
   padding-left: 5rem;
+  background-color: transparent;
 }
 
 footer {
