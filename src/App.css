@@ -1,6 +1,6 @@
 body {
   font-family: "Source Code Pro", monospace;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 20px;
   margin: 3rem;
   padding: 0.5rem;
@@ -19,15 +19,16 @@ body {
 }
 
 #heading {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 header {
   animation: fadeIn 0.75s;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -36,7 +37,7 @@ header {
 }
 
 #switchContainer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: fit-content;
   width: 150px;
   display: flex;
@@ -116,8 +117,14 @@ nav ul {
   margin: 0;
   padding: 0.25rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   font-size: 1.5rem;
+}
+
+@media (min-width: 880px) {
+  nav ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 nav ul li {
@@ -126,22 +133,28 @@ nav ul li {
 }
 
 a {
-  color: #000000;
+  color: none;
 }
 
 .dot-display {
   border: 1px solid black;
   margin: 0.5rem;
   position: relative;
-  width: 100%; /* Adjust the width to your desired size */
-  height: 400px; /* Adjust the height to your desired size */
+  width: 100%;
+  height: 400px;
   overflow: hidden;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
+}
+
+@media (min-width: 950px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 #imaging {
@@ -152,7 +165,7 @@ main {
 #about {
   /* border: 1px solid black; */
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -195,11 +208,13 @@ h3 {
   align-items: center;
 }
 
+#tech li i {
+  height: 50px;
+}
+
 #projects {
-  /* border: 1px solid black; */
   padding: 0.5em;
   display: grid;
-  /* justify-content: center; */
   gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minMax(400px, 1fr));
 }
@@ -236,9 +251,10 @@ h3 {
 }
 
 .contact {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0.5rem;
   display: flex;
+  padding-left: 5rem;
 }
 
 footer {
@@ -256,6 +272,7 @@ footer {
 #tsparticles {
   animation: fadeIn 1s;
   height: 750px;
+  width: auto;
 }
 
 @keyframes fadeIn {
@@ -265,4 +282,9 @@ footer {
   100% {
     opacity: 1;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

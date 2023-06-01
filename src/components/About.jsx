@@ -21,28 +21,28 @@ function About() {
         <h3>Technical Skills</h3>
         <ul id="tech">
           <li>
-            <i class="fa-brands fa-react"></i> React
+            <i class="fa-brands fa-react fa-2x"></i> React
           </li>
           <li>
-            <i class="fa-brands fa-js"></i> JavaScript
+            <i class="fa-brands fa-js fa-2x"></i> JavaScript
           </li>
           <li>
-            <i class="fa-brands fa-html5"></i> HTML
+            <i class="fa-brands fa-html5 fa-2x"></i> HTML
           </li>
           <li>
-            <i class="fa-brands fa-css3-alt"></i> CSS
+            <i class="fa-brands fa-css3-alt fa-2x"></i> CSS
           </li>
           <li>
-            <i class="fa-brands fa-react"></i> PostreSQL
+            <i class="fa-brands fa-react fa-2x"></i> PostreSQL
           </li>
           <li>
-            <i class="fa-brands fa-node"></i> Node.js
+            <i class="fa-brands fa-node fa-2x"></i> Node.js
           </li>
           <li>
-            <i class="fa-brands fa-git-alt"></i> Git
+            <i class="fa-brands fa-git-alt fa-2x"></i> Git
           </li>
           <li>
-            <i class="fa-brands fa-github"></i> GitHub
+            <i class="fa-brands fa-github fa-2x"></i> GitHub
           </li>
         </ul>
       </section>
