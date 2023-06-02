@@ -3,7 +3,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useState, useEffect } from "react";
 
-function Deer({ theme }) {
+function ParticleDisplay({ theme }) {
   const [particleColour, setParticleColour] = useState("#000000");
 
   useEffect(() => {
@@ -107,4 +107,4 @@ function Deer({ theme }) {
   );
 }
 
-export default Deer;
+export default ParticleDisplay;

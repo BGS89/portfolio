@@ -1,11 +1,10 @@
 import "./App.css";
 import Header from "./components/Header";
-import Nav from "./components/Nav";
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import { useState, useEffect } from "react";
 import Intro from "./components/Intro";
-import Deer from "./components/StarlingMurmuration";
+import ParticleDisplay from "./components/Particles";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -26,7 +25,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowApp(true);
-    }, 10001);
+    }, 4900);
   }, []);
 
   {
@@ -47,10 +46,9 @@ function App() {
                 <Header />
               </section>
               <main>
-                <Deer theme={theme} />
+                <ParticleDisplay theme={theme} />
                 <AnimatedRoutes />
               </main>
-              {/* <Footer /> */}
             </Router>
           </div>
         </div>

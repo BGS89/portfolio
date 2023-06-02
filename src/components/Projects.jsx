@@ -13,7 +13,7 @@ function Projects() {
         <Card
           title={"NC News"}
           body={
-            "A full stack news application build ofer a period of 2 weeks. The intention here is to mimic the building of a real world backend service (such as reddit) which should provide this information to the front end architecture. The back end of the app was build with PostgreSQL, Node.js and Javascript. The front end was build with React and CSS."
+            "A full stack news application built over a period of 2 weeks. The intention here is to mimic the building of a real world backend service (such as reddit) which should provide this information to the front end architecture. The back end of the app was build with PostgreSQL, Node.js and Javascript. The front end was build with React and CSS."
           }
           image={"./assets/logo.png"}
           alt={"nc news applications logo"}

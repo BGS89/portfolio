@@ -33,7 +33,7 @@ function About() {
             <i class="fa-brands fa-css3-alt fa-2x"></i> CSS
           </li>
           <li>
-            <i class="fa-brands fa-react fa-2x"></i> PostreSQL
+            <i class="fa-solid fa-database fa-2x"></i> PostgreSQL
           </li>
           <li>
             <i class="fa-brands fa-node fa-2x"></i> Node.js
