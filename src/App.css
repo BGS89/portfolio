@@ -3,6 +3,12 @@ body {
   font-size: 20px;
   margin: 3rem;
   padding: 0.5rem;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .dark {
@@ -26,7 +32,7 @@ body {
 header {
   animation: fadeIn 0.75s;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -111,13 +117,16 @@ nav ul {
   margin: 0;
   padding: 0.25rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 1.5rem;
 }
 
 @media (min-width: 880px) {
   nav ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+  header {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -197,15 +206,15 @@ h3 {
 }
 
 #projects {
-  padding: 0.5em;
+  /* padding: 0.5em; */
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minMax(400px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .card {
-  padding: 0.25rem;
-  width: 310px;
+  /* padding: 0.25rem; */
+  /* width: 310px; */
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
@@ -241,7 +250,7 @@ h3 {
 .contact {
   padding: 0.5rem;
   display: flex;
-  padding-left: 5rem;
+  padding-left: 0;
   background-color: transparent;
   position: relative;
 }
