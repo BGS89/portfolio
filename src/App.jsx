@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowApp(true);
-    }, 4900);
+    }, 4500);
   }, []);
 
   {
