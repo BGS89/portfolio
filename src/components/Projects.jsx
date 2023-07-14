@@ -34,6 +34,27 @@ function Projects() {
           gitLink={"https://github.com/BGS89/nc-news-fe"}
         />
         <Card
+          title={"Weather Today"}
+          body={
+            <div>
+              <p>
+                A weather app built with react and the
+                https://www.weatherapi.com/ API. The user can search for a
+                specific city or location and get the overall forecast for today
+                as well as the hourly forecast.
+              </p>
+              <p>
+                The project was built as an exercise in using external API's in
+                order to display data to a front end end application.
+              </p>
+            </div>
+          }
+          image={"./assets/weather.png"}
+          alt={"weather app front page"}
+          demoLink={"https://bgsweather.netlify.app/"}
+          gitLink={"https://github.com/BGS89/weather-today"}
+        />
+        <Card
           title={"POV Maze"}
           body={
             <div>
