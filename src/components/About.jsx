@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-function About() {
+function About({ theme }) {
+  const [logoFilter, setLogoFilter] = useState("none");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setLogoFilter("invert(1)");
+    } else {
+      setLogoFilter("none");
+    }
+  }, [theme]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -25,6 +36,14 @@ function About() {
           </li>
           <li>
             <i class="fa-brands fa-js fa-2x"></i> JavaScript
+          </li>
+          <li>
+            <img
+              style={{ filter: logoFilter, transition: "filter 0.75s" }}
+              src="../assets/icons8-typescript-50.png"
+              alt="typescript logo"
+            />
+            TypeScript
           </li>
           <li>
             <i class="fa-brands fa-html5 fa-2x"></i> HTML
