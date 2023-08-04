@@ -47,7 +47,7 @@ function App() {
               </section>
               <main>
                 <ParticleDisplay theme={theme} />
-                <AnimatedRoutes />
+                <AnimatedRoutes theme={theme} />
               </main>
             </Router>
           </div>
