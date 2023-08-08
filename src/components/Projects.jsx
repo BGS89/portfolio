@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Card from "./Card";
 
-function Projects() {
+function Projects({ theme }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,6 +11,7 @@ function Projects() {
       <section id="projects">
         <h2>Projects</h2>
         <Card
+          theme={theme}
           title={"NC News"}
           body={
             <div>
@@ -34,6 +35,7 @@ function Projects() {
           gitLink={"https://github.com/BGS89/nc-news-fe"}
         />
         <Card
+          theme={theme}
           title={"Weather Today"}
           body={
             <div>
@@ -49,12 +51,13 @@ function Projects() {
               </p>
             </div>
           }
-          image={"./assets/weather.png"}
+          image={"./assets/sun-regular.svg"}
           alt={"weather app front page"}
           demoLink={"https://bgsweather.netlify.app/"}
           gitLink={"https://github.com/BGS89/weather-today"}
         />
         <Card
+          theme={theme}
           title={"POV Maze"}
           body={
             <div>
