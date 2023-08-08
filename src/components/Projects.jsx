@@ -51,7 +51,7 @@ function Projects({ theme }) {
               </p>
             </div>
           }
-          image={"./assets/weather.png"}
+          image={"./assets/sun-regular.svg"}
           alt={"weather app front page"}
           demoLink={"https://bgsweather.netlify.app/"}
           gitLink={"https://github.com/BGS89/weather-today"}
