@@ -12,6 +12,24 @@ function Projects({ theme }) {
         <h2>Projects</h2>
         <Card
           theme={theme}
+          title={"Premier Football"}
+          body={
+            <div>
+              <p>
+                This application is designed to provide football fans of teams
+                in the Isthmian Premier League with easy access to non-league
+                football fixtures, results, news, and league tables.
+              </p>
+              <p>Built with React & Bootstrap.</p>
+            </div>
+          }
+          image={"./assets/premier.png"}
+          alt={"premier football logo"}
+          demoLink={"https://premier-football.netlify.app/"}
+          gitLink={"https://github.com/BGS89/premier-football"}
+        />
+        <Card
+          theme={theme}
           title={"NC News"}
           body={
             <div>
